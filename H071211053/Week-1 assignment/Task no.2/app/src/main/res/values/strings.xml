@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Activity Assignment 2</string>
+    <string-array name="select">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>
