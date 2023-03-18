@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         String hasil = binding.numpad.getText().toString();
 
         isSetOp = true;
+        isOperated = false;
         if(isSetOp && hasil.substring(hasil.length()-1).equals(operator)) {
             hasil = hasil.replaceFirst("[X+-/]", buttonText);
             binding.numpad.setText(hasil);
