@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="35dp"
+    android:background="@drawable/bg_newjeans"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/tv_totalQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text=""/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="10dp">
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/chakra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_opsi1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/chakra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_opsi2"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/chakra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_opsi3"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/chakra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_opsi4"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/chakra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text=""/>
+
+</LinearLayout>
