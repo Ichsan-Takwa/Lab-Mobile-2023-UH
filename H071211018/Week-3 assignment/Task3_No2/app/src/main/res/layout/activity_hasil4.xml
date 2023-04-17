@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".HasilActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramadhan"
+            android:textSize="30sp"
+            android:textColor="#E19627"
+            android:fontFamily="cursive"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#748AFF"
+            android:fontFamily="cursive"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Game Over"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_gg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="GGWP astrina!!"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_kuis">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Score"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_hasilScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="35dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Score"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:paddingTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_bestScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="35dp"
+            android:text="Back to Home"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_list"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
