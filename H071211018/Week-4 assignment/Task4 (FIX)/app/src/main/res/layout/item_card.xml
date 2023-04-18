@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo_image" />
+        <TextView
+            android:id="@+id/tv_fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_photo"
+            android:text="File Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_addedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="added date"
+            android:layout_toRightOf="@id/iv_photo"
+            android:layout_below="@id/tv_fileName"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
