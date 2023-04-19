@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pdi"
+    tools:context=".Explorer">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingHorizontal="20dp">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_account_circle_24"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageButton
+        android:id="@+id/changeLayoutBt"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#ff726b"
+        android:elevation="1dp"
+        android:forceDarkAllowed="false"
+        android:src="@drawable/baseline_reorder_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/colCountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:forceDarkAllowed="false"
+        android:padding="0dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:text="1"
+        android:textColor="#F888"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/changeLayoutBt"
+        app:layout_constraintEnd_toEndOf="@+id/changeLayoutBt"
+        app:layout_constraintStart_toStartOf="@+id/changeLayoutBt"
+        app:layout_constraintTop_toTopOf="@+id/changeLayoutBt" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/explorerRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#A000"
+        android:forceDarkAllowed="false"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
