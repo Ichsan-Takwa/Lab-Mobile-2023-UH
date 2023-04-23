@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.net.URI;
+
 public class ScoreActivity extends AppCompatActivity {
 
     public static int correctAnswers = 0;
@@ -34,7 +36,7 @@ public class ScoreActivity extends AppCompatActivity {
         button = findViewById(R.id.btn_rtn);
         st1 = getIntent().getExtras().getString("text1");
         st2 = getIntent().getExtras().getString("text2");
-        bundle = getIntent().getExtras().getBundle("image");
+        bundle = getIntent().getExtras();
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -44,10 +46,13 @@ public class ScoreActivity extends AppCompatActivity {
 
                 v.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP|Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
+                score = getIntent().getIntExtra("Score", -1);
+
                 v.putExtra("text1",st1);
                 v.putExtra("text2",st2);
-                v.putExtra("image",bundle);
-                v.putExtra("score", (CharSequence) bestscore);
+                URI image = getIntent().getParcelableExtra("image");
+                v.putExtra("image",image);
+                v.putExtra("score", score);
                 startActivity(v);
                 finish();
             }

@@ -26,6 +26,7 @@ public class Welcome extends AppCompatActivity {
     private Button btn;
 
     private Bundle bundle;
+    Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +38,15 @@ public class Welcome extends AppCompatActivity {
         text3 = findViewById(R.id.text3);
         image2 = findViewById(R.id.imagecircle1);
         btn = findViewById(R.id.button2);
-        st1 = getIntent().getExtras().getString("text1");
-        st2 = getIntent().getExtras().getString("text2");
         bundle = getIntent().getExtras();
+        st1 = getIntent().getStringExtra("text1");
+        st2 = getIntent().getStringExtra("text2");
 
-        if (bundle != null) {
-            String imageUriString = bundle.getString("image1");
-            Uri imageUri = Uri.parse(imageUriString);
+
+
+        if (bundle!= null) {
+
+            imageUri = getIntent().getParcelableExtra("image1");
             image2.setImageURI(imageUri);
 
             text1.setText(st1);
@@ -55,12 +58,22 @@ public class Welcome extends AppCompatActivity {
                     Intent iv = new Intent(Welcome.this, MainActivity.class);
                     iv.putExtra("text1",st1);
                     iv.putExtra("text2",st2);
-                    iv.putExtra("image",bundle);
+                    iv.putExtra("image",imageUri);
                     startActivity(iv);
                     finish();
                 }
             });
 
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        int score = intent.getIntExtra("score",-1);
+
+        TextView bestScoreTv = findViewById(R.id.text3);
+        bestScoreTv.setText(score+"");
     }
 }

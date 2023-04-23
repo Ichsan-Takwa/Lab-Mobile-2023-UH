@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.graphics.Color;
 
+import java.net.URI;
+
 public class MainActivity extends AppCompatActivity {
     private TextView questionText;
 
@@ -61,9 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         st1 = getIntent().getExtras().getString("text1");
         st2 = getIntent().getExtras().getString("text2");
-        bundle = getIntent().getExtras().getBundle("image");
-
-
+        bundle = getIntent().getExtras();
         displayquestion();
 
         optiona.setOnClickListener(new View.OnClickListener() {
@@ -194,7 +194,8 @@ public class MainActivity extends AppCompatActivity {
 
             intent.putExtra("text1",st1);
             intent.putExtra("text2",st2);
-            intent.putExtra("image",bundle);
+            URI image = getIntent().getParcelableExtra("image1");
+            intent.putExtra("image",image);
 
             intent.putExtra("Score",score);
 

@@ -35,6 +35,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
         button1 = findViewById(R.id.button1);
         editText = findViewById(R.id.edittext1);
 
+        imageUri = getIntent().getParcelableExtra("image");
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +50,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
                     text1 = editText.getText().toString();
                     intent.putExtra("text2","0");
                     intent.putExtra("text1",text1);
-                    intent.putExtra("image1",imageUri.toString());
+                    intent.putExtra("image1",imageUri);
                     startActivity(intent);
                     finish();
 
