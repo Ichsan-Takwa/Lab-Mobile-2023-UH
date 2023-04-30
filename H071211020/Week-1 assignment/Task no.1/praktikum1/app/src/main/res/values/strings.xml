@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">praktikum1</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium lobortis libero, at vulputate nibh malesuada vel. Fusce in felis vel nisl dapibus dignissim. Nam malesuada, quam eu vulputate elementum, sapien quam sodales quam, in consectetur magna risus ut nisl. Donec eu lorem a enim tincidunt suscipit. Vestibulum vitae consectetur magna, vel rhoncus lacus. Sed ut nunc convallis, rutrum neque sed, maximus odio. Integer sed justo sit amet nulla vestibulum hendrerit in a sapien. Phasellus non lectus leo. Etiam malesuada gravida tortor, at tempor nisl bibendum sed. Proin ac felis sed dolor consequat semper. Vestibulum euismod velit id sapien eleifend bibendum. Suspendisse potenti.
+        Pellentesque et efficitur urna. Mauris porttitor urna vitae magna tincidunt, vitae malesuada odio placerat. Sed faucibus ipsum in velit suscipit, nec auctor nulla rhoncus. Integer accumsan nec enim vel ullamcorper. Etiam tincidunt velit in odio pellentesque blandit. Praesent vel eros nec justo fermentum dictum.</string>
+</resources>
