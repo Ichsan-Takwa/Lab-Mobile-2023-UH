@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ScoreActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#ffffff"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="score :"
+                android:layout_gravity="center"
+                android:textColor="#1C1C1C"
+                android:fontFamily="@font/loftus"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="100"
+                android:fontFamily="@font/loftus"
+                android:textColorHint="#D5517C"
+                android:textColor="#D5517C"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#1C1C1C"
+                android:text="best score :"
+                android:textSize="40dp"
+                android:fontFamily="@font/loftus"/>
+
+            <TextView
+                android:id="@+id/bestscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="100"
+                android:fontFamily="@font/loftus"
+                android:textColorHint="#EB6A36"
+                android:textColor="#EB6A36"
+                android:textSize="40dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_rtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#8e4584"
+        android:gravity="center"
+        android:text="return"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/loftus"
+        android:textAllCaps="false"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>
