@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="425dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/main_element">
+
+        <ImageView
+            android:layout_width="324dp"
+            android:layout_height="103dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/drive_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0f2f46"
+            android:layout_marginTop="2dp"
+            android:textSize="13sp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="40dp"
+            android:text="Drive is a free service that allows you to store files both online and offline and access them anywhere using the app. "/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="start now!"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/inter_bold"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#ff726b"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="200dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/mainbg"/>
+</LinearLayout>
