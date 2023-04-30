@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bakcground"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="15dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo_drive"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GalleryByaw"
+                        android:textSize="30sp"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal cloud storage"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="enter your account"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="50dp"
+                        app:cardElevation="21dp">
+
+                        <ImageView
+                            android:id="@+id/iv_profil"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profil"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:boxCornerRadiusTopStart="15dp"
+                        app:boxCornerRadiusTopEnd="15dp"
+                        app:boxCornerRadiusBottomStart="15dp"
+                        app:boxCornerRadiusBottomEnd="15dp"
+                        app:boxBackgroundColor="@color/purple_200"
+                        app:boxBackgroundMode="outline">
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email ID"
+                            android:inputType="textEmailAddress"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:boxCornerRadiusTopStart="15dp"
+                        app:boxCornerRadiusTopEnd="15dp"
+                        app:boxCornerRadiusBottomStart="15dp"
+                        app:boxCornerRadiusBottomEnd="15dp"
+                        app:boxBackgroundColor="@color/purple_200"
+                        app:boxBackgroundMode="outline"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Create account"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:fontFamily="sans-serif-black"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:text="Login"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select Language"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

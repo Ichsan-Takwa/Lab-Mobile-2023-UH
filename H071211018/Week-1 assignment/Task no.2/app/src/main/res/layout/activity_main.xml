@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bangunruang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/tv_bangunruang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Bangun Ruang :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/sp_bangunruang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/pilih_bangun_ruang" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jarijari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_jarijari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jari-jari"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_jarijari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panjang"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/et_panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:paddingTop="15dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lebar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:paddingTop="15dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:paddingTop="15dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="HITUNG"
+        android:padding="12dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Hasil"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

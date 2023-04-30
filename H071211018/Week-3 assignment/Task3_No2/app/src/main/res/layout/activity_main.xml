@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramadhan"
+            android:textSize="30sp"
+            android:textColor="#E19627"
+            android:fontFamily="cursive"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#748AFF"
+            android:fontFamily="cursive"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                android:padding="5dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="astrinaa"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_bScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Score = 0"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"/>
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="enter your name"
+                android:paddingLeft="15dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Apply"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:backgroundTint="#E19627"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

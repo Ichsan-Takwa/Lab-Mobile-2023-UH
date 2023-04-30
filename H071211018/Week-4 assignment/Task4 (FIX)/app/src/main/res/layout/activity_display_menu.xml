@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayMenu">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F0FA8FB3"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo_drive"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GalleryByaw"
+                        android:textSize="25sp"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal cloud storage"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profil"
+                android:scaleType="centerCrop"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/sv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_display"
+        android:padding="20dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#F0FA8FB3"
+        android:src="@drawable/logo_upload" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activity Assignment 2</string>
+    <string-array name="pilih_bangun_ruang">
+
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+
+    </string-array>
+</resources>
