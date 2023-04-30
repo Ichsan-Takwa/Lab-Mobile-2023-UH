@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bangun Ruang</string>
+    <string name="pilih_bangun_ruang">Pilih Bangun Ruang :</string>
+    <string name="asanahem">asanahem</string>
+    <string name="jari_jari">Jari-jari</string>
+    <string name="jari">Jari-jari</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="tinggii">Tinggi</string>
+    <string name="panjang_">Panjang</string>
+    <string name="hasil">Hasil</string>
+    <string name="panjang">Panjang</string>
+    <string name="hitung">Hitung</string>
+    <string-array name="bangun_ruang">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>

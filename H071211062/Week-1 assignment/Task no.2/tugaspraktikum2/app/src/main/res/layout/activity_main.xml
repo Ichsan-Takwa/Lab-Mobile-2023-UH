@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:minHeight="48dp"
+            android:text="@string/pilih_bangun_ruang"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/bangun_ruang"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            tools:layout_editor_absoluteX="198dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/jari_jari"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/jari"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <TextView
+        android:id="@+id/tvValue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/tinggi"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <EditText
+        android:id="@+id/etValue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tinggii"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/tvValue3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/panjang_"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <EditText
+        android:id="@+id/etValue3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/panjang"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hasil"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="428dp"
+        tools:ignore="TextViewEdits" />
+
+
+</LinearLayout>
